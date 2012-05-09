@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 gem 'sqlite3'
 
 group :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 2.9.0'
   gem 'factory_girl', '~> 2.6.4'
   gem 'factory_girl_rails', '~> 1.7'
@@ -13,4 +14,4 @@ end
 
 gemspec
 
-gem 'spree', :git => 'https://github.com/spree/spree', :branch => "1-1-stable"
+gem 'spree', :github => 'scudco/spree', :branch => 'update-spree-version'
