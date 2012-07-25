@@ -1,4 +1,6 @@
 Spree::Admin::VariantsController.class_eval do
+  before_filter :setup_new_volume_price, :only => [:edit, :volume_prices]
+
   def load_resource_instance
     parent
 
@@ -11,5 +13,9 @@ Spree::Admin::VariantsController.class_eval do
 
   def volume_prices
     @product = @variant.product
+  end
+
+  def setup_new_volume_price
+    @variant.volume_prices.build if @variant.volume_prices.blank?
   end
 end
