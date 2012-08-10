@@ -14,4 +14,4 @@ end
 
 gemspec
 
-gem 'spree', :github => 'scudco/spree', :branch => 'update-spree-version'
+gem 'spree', :github => 'spree/spree', :branch => '1-2-stable'
